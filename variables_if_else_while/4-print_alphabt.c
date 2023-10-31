@@ -14,6 +14,6 @@ if (alp != 'e' && alp != 'q')
 {
 putchar(alp);
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
