@@ -1,20 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Print string _putchar only using putchar
- *
- * Return: Always 0.
- */
+*main - Print string only using putchar
+*Return: 0
+*/
 int main(void)
 {
-
-char str[] = "_putchar";
-int count = 0;
-
-while (str[count] != '\0')
-{
-putchar(str[count]);
-count++;
-}
-putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
