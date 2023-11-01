@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - checks for lowercase character
  *
@@ -11,5 +10,4 @@ if(c >= 'a' && c <='z')
 return 1;
 else
 return 0;
-
 }
