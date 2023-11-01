@@ -1,20 +1,19 @@
 #include "main.h"
+
 /**
-* print_alphabet_x10 - Print alphabet
-*
-*/
+ * print_alphabet_x10 - Print alphabet in two lines
+ */
 void print_alphabet_x10(void)
 {
-int i;
-char alp;
+    int i;
+    char alp;
 
 for (i = 0; i < 10; ++i)
 {
-_putchar('\n');
 for (alp = 'a'; alp <= 'z'; ++alp)
 {
-_putchar(alp);    
-}
+_putchar(alp);
 }
 _putchar('\n');
+}
 }
