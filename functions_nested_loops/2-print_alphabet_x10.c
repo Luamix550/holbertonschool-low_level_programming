@@ -17,6 +17,4 @@ _putchar(alp);
 }
 }
 _putchar('\n');
-return (0);
 }
-
