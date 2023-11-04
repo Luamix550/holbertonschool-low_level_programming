@@ -13,10 +13,7 @@ int aux;
 
 aux = n % 10;
 if (n < 0)
-{
 aux = aux * -1;
-_putchar(aux);
-}
 _putchar(aux + '0');
 return (aux);
 }
