@@ -22,6 +22,7 @@ _putchar((num % 10) + '0');
 }
 else
 {
+
 _putchar((num / 10) + '0');
 _putchar((num % 10) + '0');
 }
