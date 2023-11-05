@@ -18,12 +18,12 @@ _putchar(' ');
 if (num < 10)
 {
 _putchar(' ');
-_putchar((num % 10 ) + '0');
+_putchar((num % 10) + '0');
 }
 else
 {
-_putchar((num / 10 ) + '0');   
-_putchar((num % 10 ) + '0');
+_putchar((num / 10) + '0');   
+_putchar((num % 10) + '0');
 }
 }
 _putchar('\n');
