@@ -15,6 +15,10 @@ if (aux < 98)
 {
 printf(", ");
 }
+else if(aux == 98)
+{
+putchar('\n');
+}
 }
 if (n > 98)
 {
