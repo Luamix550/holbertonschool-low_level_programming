@@ -11,13 +11,13 @@ if (size <= 0)
 return;
 }
 
-for (i = 1; i <= size; ++i)
+for (i = 0; i <= size; ++i)
 {
-for (k = 1; k <= size - i; ++k)
+for (k = 0; k <= size - i; ++k)
 {
 _putchar(' ');
 }
-for (j = 1 ; j <= i ; ++j)
+for (j = 0 ; j <= i ; ++j)
 {
 _putchar('#');
 }
