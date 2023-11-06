@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -  replacing multiples of 3 with the word "fizz", of 5 with "buzz" and multiples of both, multiples of 3 and 5, with the word "fizzbuzz".
+ * main - fizzbuzz exercise
  * Return: Always 0.
  */
 int main(void)
