@@ -5,11 +5,11 @@
  */
 void print_triangle(int size)
 {
+int i, j, k;
 if (size <= 0)
 {
 return;
 }
-int i, j, k;
 
 for (i = 1; i <= size; ++i)
 {
