@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * main - fizzbuzz
+ * main - display numbers from 1 to 100, replacing multiples of 3 with the word "fizz",
+ * multiples of 5 with "buzz" and multiples of both, multiples of 3 and 5 (or 15), with the word "fizzbuzz".
+ *
+ * Return: Always 0.
  */
-#include <stdio.h>
-
 int main(void)
 {
 int i;
@@ -32,5 +33,5 @@ printf(" ");
 }
 }
 printf("\n");
-return 0;
+return (0);
 }
