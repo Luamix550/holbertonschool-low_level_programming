@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strlen - check the code
+ * _strlen - length of the string
  *
- * Return: Always 0.
+ * @s: string
  */
 int _strlen(char *s)
 {
