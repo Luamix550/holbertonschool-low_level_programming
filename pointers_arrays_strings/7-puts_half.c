@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * puts_half - print half of string
  * @str: gets the string
@@ -12,14 +13,12 @@ while (str[len] != '\0')
 {
 len++;
 }
+i = len / 2;
 
-if (i >= len)
+if (len == 0)
 {
 return;
 }
-
-i = len / 2;
-
 if (len % 2 == 1)
 {
 i++;
