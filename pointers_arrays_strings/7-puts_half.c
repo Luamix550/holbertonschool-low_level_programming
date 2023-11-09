@@ -6,28 +6,31 @@
  */
 void puts_half(char *str)
 {
-int len = 0;
-int i = 0;
+    int len = 0;
+    int i = 0;
 
-while (str[len] != '\0')
-{
-len++;
-}
-i = len / 2;
+    // Calcular la longitud de la cadena
+    while (str[len] != '\0') {
+        len++;
+    }
 
-if (len == 0)
-{
-return;
-}
-if (len % 2 == 1)
-{
-i++;
-}
+    // Calcular el índice de inicio para imprimir la segunda mitad
+    i = len / 2;
 
-while (str[i] != '\0')
-{
-_putchar(str[i]);
-i++;
-}
-_putchar('\n');
+    if (len == 0) {
+        // Si la cadena está vacía, simplemente imprime un carácter de nueva línea y retorna
+        _putchar('\n');
+        return;
+    }
+
+    if (len % 2 == 1) {
+        i++; // Aumentar i en 1 si la longitud es impar
+    }
+
+    // Imprimir la segunda mitad de la cadena
+    while (str[i] != '\0') {
+        _putchar(str[i]);
+        i++;
+    }
+    _putchar('\n');
 }
