@@ -15,22 +15,14 @@ void puts_half(char *str)
     }
 
     // Calcular el índice de inicio para imprimir la segunda mitad
-    i = len / 2;
+    i = (len + 1) / 2;
 
-    if (len == 0) {
-        // Si la cadena está vacía, simplemente imprime un carácter de nueva línea y retorna
-        _putchar('\n');
-        return;
-    }
-
-    if (len % 2 == 1) {
-        i++; // Aumentar i en 1 si la longitud es impar
-    }
-
-    // Imprimir la segunda mitad de la cadena
-    while (str[i] != '\0') {
-        _putchar(str[i]);
-        i++;
+    if (len > 0) {
+        // Imprimir la segunda mitad de la cadena si la longitud es mayor que 0
+        while (str[i] != '\0') {
+            _putchar(str[i]);
+            i++;
+        }
     }
     _putchar('\n');
 }
