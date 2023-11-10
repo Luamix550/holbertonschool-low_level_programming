@@ -3,10 +3,12 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 
+char* tmp = dest;
 
-while(*src && n--)
-{
+while(*src && n--){
+
 *dest++ = *src++; 
+
 }
 while (n > 0)
 {
@@ -14,6 +16,6 @@ while (n > 0)
     n--;
 }
 
-return (dest);
+return (tmp);
 
 }
