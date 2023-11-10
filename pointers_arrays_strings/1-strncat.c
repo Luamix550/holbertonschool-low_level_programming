@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strncat - a function that concatenates two strings
- * @dest:copy to
+ * _strncpy - a function that copies a string
+ * @dest: copy to
  * @src: copy from
- * @n: n
+ * @n: input number of char
  * Return: Always 0 (Success)
  */
 char *_strncat(char *dest, char *src, int n)
