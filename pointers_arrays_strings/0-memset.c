@@ -6,15 +6,18 @@
 *@n:bytes
 *Return: s
 */
-char_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 
-unsigned int i;
+	int size = n;
 
-for (i = 0; i < n && s[i] != '\0'; i++)
-{
-s[i] = b;
-}
+	if (size > 0)
+	{
+		int i;
 
-return (s);
+		for (i = 0; i < size; i++)
+			s[i] = b;
+	}
+
+	return (s);
 }
