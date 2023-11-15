@@ -11,3 +11,10 @@ int _isalpha(int c);
 int _abs(int);
 int print_sign(int n);
 int print_last_digit(int);
+<<<<<<< HEAD
+=======
+void times_table(void);
+void jack_bauer(void);
+int add(int, int);
+void print_to_98(int n);
+>>>>>>> 324edccb0999efdafa0e634971a50e5f4a88dd66
