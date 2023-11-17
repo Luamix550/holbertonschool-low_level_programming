@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strdup - returns a pointer with string copy 
+ * _strdup - returns a pointer with string copy
  * @str: string to be duplicated
  * Return: string duplicated
 */
@@ -11,7 +11,7 @@ char *_strdup(char *str)
 
 char *arr;
 
-if(str == NULL)
+if (str == NULL)
 {
 return (NULL);
 }
