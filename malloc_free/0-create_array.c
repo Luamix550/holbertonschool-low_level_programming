@@ -1,26 +1,23 @@
 #include <stdlib.h>
-/**
- *
- * d
-*/
+
 char *create_array(unsigned int size, char c)
 {
+    unsigned int i; // Change to unsigned int for consistency with 'size'
 
-int i; 
+    if (size == 0)
+        return NULL;
 
-if (size == 0)
-    return (NULL);
-    
     char *arr = (char *)malloc(size * sizeof(char));
 
-if (arr == NULL)
-{
-return (NULL);
-}
+    if (arr == NULL)
+    {
+        return NULL;
+    }
 
-for (i = 0; i < size; i++)
-{
-arr[i] = c;
-}
-return (arr);
+    for (i = 0; i < size; i++)
+    {
+        arr[i] = c;
+    }
+
+    return arr;
 }
