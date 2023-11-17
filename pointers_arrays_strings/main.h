@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdio.h>
 #include <string.h>
 
@@ -23,6 +25,7 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 <<<<<<< HEAD
+<<<<<<< HEAD
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
@@ -30,3 +33,8 @@ void print_diagsums(int *a, int size);
 =======
 char *_strstr(char *haystack, char *needle);
 >>>>>>> 078ae535e02a4175ec5aa3f1f29dbb8973c94f4e
+=======
+char *_strstr(char *haystack, char *needle);
+
+#endif
+>>>>>>> feff729 (Guardar cambios en main.h)
