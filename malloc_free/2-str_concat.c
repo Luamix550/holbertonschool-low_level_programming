@@ -15,6 +15,10 @@ char *new_str;
     }
 
 new_str = malloc(strlen(s1)+strlen(s2)+1);
+if(new_str == NULL){
+    free(new_str);
+    return(NULL);
+}
 new_str[0] = '\0';
 strcat(new_str,s1);
 strcat(new_str,s2);
