@@ -24,12 +24,15 @@ s2 = "";
 s1_len = strlen(s1);
 s2_len = strlen(s2);
 
-if (n>= s2_len)
+if (n >= s2_len)
 {
 n = s2_len;
 }
 
 new_str = (char *) malloc(s1_len + n + 1);
+if ( new_str == NULL){
+    return NULL;
+}
 
 strcpy(new_str, s1);
 
