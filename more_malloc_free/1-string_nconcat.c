@@ -8,9 +8,7 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *new_str = NULL;
-unsigned int i;
-char *aux = NULL;
+char *new_str = NULL; unsigned int i; char *aux = NULL;
 
 if (s1 == NULL)
 {
@@ -46,5 +44,6 @@ aux[n] = '\0';
 strcpy(new_str, s1);
 strcat(new_str, aux);
 free(aux);
+
 return (new_str);
 }
