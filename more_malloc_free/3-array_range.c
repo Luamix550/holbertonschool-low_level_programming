@@ -19,5 +19,12 @@ if( ptr == NULL)
 return (NULL);
 
 }
+while( min <= max)
+{
+    ptr[i] = min;
+    i++;
+    min++;
+}
+reutnr(ptr);
 
 }
