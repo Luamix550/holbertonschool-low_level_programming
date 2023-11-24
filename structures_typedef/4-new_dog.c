@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-typedef struct {
-    char *name;
-    float age;
-    char *owner;
-} dog_t;
+#include "dog.h"
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -28,7 +23,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
     if (newdog->owner == NULL) {
         free(newdog->name);
-        free(newdog);
+        free(newdog);  
         return NULL;
     }
 
