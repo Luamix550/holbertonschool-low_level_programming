@@ -1,4 +1,5 @@
-#include "function_pointers.h"
+#ifdef PRINT_NAME_H
+#define PRINT_NAME_H
 /**
  * print_name - print name
  * @name: name to print
@@ -12,3 +13,4 @@ if (name != NULL && f != NULL)
 f(name);
 }
 }
+#endif
