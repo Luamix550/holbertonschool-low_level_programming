@@ -1,4 +1,4 @@
-                                              Holberton Low-Level Programming Repository
+                               Holberton Low-Level Programming Repository
 
 
 Description
