@@ -1,33 +1,59 @@
 #include <stdlib.h>
+#include "main.h"
+
 /**
- *create_array - creates an array of chars
- *@size: represent size of the array
- *@c:represents the character with which each element of the array
- *Return: arr
+ * *_memset - fills memory with a constant byte
+ * @s: memory area to be filled
+ * @b: char to copy
+ * @n: number of times to copy b
  *
-*/
-char *create_array(unsigned int size, char c)
+ * Return: pointer to the memory area s
+ */
+char *_memset(char *s, char b, unsigned int n)
 {
+    unsigned int i;
 
-unsigned int i;
+    for (i = 0; i < n; i++)
+    {
+        s[i] = b;
+    }
 
+<<<<<<< HEAD
 char *arr;
 
 if (size == 0)
+=======
+    return s;
+}
+>>>>>>> 5e0e96ca8eecbfa220eb3b9387f67fb6e8da6b4c
 
-return (NULL);
+/**
+ * *_calloc - allocates memory for an array
+ * @nmemb: number of elements in the array
+ * @size: size of each element
+ *
+ * Return: pointer to the allocated memory
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+    void *ptr;
+    unsigned int i;
+    char *c_ptr;
 
+<<<<<<< HEAD
 *arr = (char *)malloc(size * sizeof(char));
+=======
+    if (nmemb == 0 || size == 0)
+        return NULL;
+>>>>>>> 5e0e96ca8eecbfa220eb3b9387f67fb6e8da6b4c
 
-if (arr == NULL)
-{
-return (NULL);
-}
+    ptr = malloc(nmemb * size);
+    if (ptr == NULL)
+        return NULL;
 
-for (i = 0; i < size; i++)
-{
-arr[i] = c;
-}
-return (arr);
-}
+    c_ptr = ptr;
+    for (i = 0; i < nmemb * size; i++)
+        c_ptr[i] = 0;
 
+    return ptr;
+}
